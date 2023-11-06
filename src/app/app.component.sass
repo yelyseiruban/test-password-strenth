@@ -1,0 +1,91 @@
+html, *
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-size: 30px
+
+html
+  background-color: #f86e95
+
+main
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .pass-container
+    padding: 40px 30px
+    background-color: #d34970
+    border-radius: 20px
+
+    .requirements
+      padding: 10px
+      border-radius: 10px
+      background-color: #ffe9ef
+      p
+        margin-bottom: 10px
+
+      .gray
+        color: #4b4b4b
+      .red
+        color: #791919
+      .yellow
+        color: #8f8f13
+      .green
+        color: green
+
+    .hint-container
+      position: relative
+      display: flex
+      flex-direction: column
+
+
+      .hint-text
+        opacity: 0
+        top: 0
+        left: 105%
+        position: absolute
+        border-radius: 10px
+        background-color: black
+        color: white
+        padding: 10px
+        z-index: 1
+        transition: opacity 0.15s ease
+
+      .pass-input
+        display: flex
+        justify-content: space-between
+        border-radius: 10px
+        color: #26010d
+        padding-right: 10px
+        background-color: #ffe9ef
+        margin-bottom: 15px
+        transition: background-color 0.15s ease
+
+        .show-pass-btn
+          background-color: transparent
+          border: none
+          i
+            color: #26010d
+            cursor: pointer
+        input
+          color: #26010d
+          border: none
+          display: flex
+          width: 100%
+          height: 100%
+          padding: 10px 10px
+          background-color: transparent
+
+        input:focus
+          outline: none
+
+      .pass-input:focus-within
+        background-color: #fdc9d8
+
+
+    .hint-container:hover .hint-text
+      opacity: 1
+
+
+
